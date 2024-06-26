@@ -18,12 +18,19 @@ candidateAnswer = " ";
 
 //TODO: Variables for Part 2
 let questions = [
-  "Who was the first American woman in space? " ,
-  "True or False: 5 kilometers == 5000 meters? " ,
-  "(5 + 3)/2 * 10 = ? " ,
-  "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2? " ,
+  "Who was the first American woman in space? ",
+  "True or false: 5 kilometer == 5000 meters? ",
+  "(5 + 3)/2 * 10 = ? ",
+  "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2? ",
   "What is the minimum crew size for the ISS? " 
 ];
+
+//Googled how to end elements in an array with a trailing space --- even though I thought 
+//I was already doing that when I wrote them in... I left a space inbetween question mark 
+//and the quotations. I even added a space before the comma just to make sure that wasn't 
+//an issue. Anyway... adding below code didn't do anything either. So... not sure the issue.
+const arrayWithSpaces = questions.map(element => element + " ");  
+
 let correctAnswers = [
   "Sally Ride",
   "true",
@@ -31,6 +38,7 @@ let correctAnswers = [
   "Trajectory",
   "3"
 ];
+
 let candidateAnswers = [];
 
 
