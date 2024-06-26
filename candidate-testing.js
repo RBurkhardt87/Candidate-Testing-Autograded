@@ -59,7 +59,7 @@ function gradeQuiz(candidateAnswers) {
   // }   else {console.log('Incorrect Answer');
   // }
   
-  for (let i = 0; i < correctAnswer.length; i++) {
+  for (let i = 0; i < questions.length; i++) {
     console.log(`Your answer was ${candidateAnswers[i]} and the correct answer was ${correctAnswers[i]}`);
   }
 
@@ -76,7 +76,7 @@ function gradeQuiz(candidateAnswers) {
 function runProgram() {
   askForName();
   // TODO 1.1c: Greet candidate using their name //
-   console.log();
+   console.log(`Hello ${candidateName}!`);
   askQuestion();
   gradeQuiz(this.candidateAnswers);
 }
