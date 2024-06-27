@@ -62,19 +62,35 @@ function gradeQuiz(candidateAnswers) {
   // }   else {console.log('Incorrect Answer');
   // }
   
-  for (let i = 0; i < questions.length; i++) {
-    console.log(`Your answer was ${candidateAnswers[i]} and the correct answer was ${correctAnswers[i]}`);
-  }
-
-  
 
 
 
   let grade;  //TODO 3.2 use this variable to calculate the candidates score.
+  // let correctlyAnswered;
+  // let numTotalQuestions;
+  // grade = (correctlyAnswered) / (numTotalQuestions) * 100;
+
+  // function compareAnswers(candidateAnswers, correctAnswers) {
+   
+  let i = 0 
+  candidateAnswers[i];
+  correctAnswers[i];
+
+    while (i < correctAnswers.length) {
+      if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()) {
+      console.log('Correct Answer!');
+    } else {
+      console.log('Incorrect Answer');
+    } i++;
+  }
+
 
 
   return grade;
 }
+
+
+
 
 function runProgram() {
   askForName();
