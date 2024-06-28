@@ -45,9 +45,10 @@ function askForName() {
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
   
+  
   //candidateAnswer = input.question("Who was the first American woman in space? ");
 
-
+//PART 2: REPLACE CODE WITH UPDATED CODE THAT ASKS ALL QUESTIONS IN THE ARRAY
  for (let i = 0; i < questions.length; i++) {
   candidateAnswers[i] = input.question(questions[i]);
  } 
@@ -57,8 +58,14 @@ function askQuestion() {
 function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-    
-  // if (candidateAnswer === correctAnswer) {console.log('Correct Answer');
+  
+
+  
+for (let i = 0; i < candidateAnswers.length; i++) {
+  console.log(`You answered ${candidateAnswers[i]} and the correct answer was ${correctAnswers[i]}.`);
+}
+
+  // if (candidateAnswers[i] === correctAnswers[i]) {console.log('Correct Answer');
   // }   else {console.log('Incorrect Answer');
   // }
   
