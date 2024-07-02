@@ -65,14 +65,25 @@ let grade;  //TODO 3.2 use this variable to calculate the candidates score.
 let answeredCorrectArray = [];
 let answeredIncorrectArray = [];
 
-for (let i = 0; i < candidateAnswers.length; i++) {
+// for (let i = 0; i < candidateAnswers.length; i++) {
+//   if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()) {
+//     answeredCorrectArray.push(candidateAnswers[i]);
+//   } else {
+//     answeredIncorrectArray.push(candidateAnswers[i]);
+//   }
+// }
+
+//create a counter (such as numCorrect) that you ++ each time they answer a question correct.
+//TRY TO CREATE THIS OPTION
+let numCount = 0;
+for (let i = 0; i <candidateAnswers.length; i++) 
   if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()) {
-    answeredCorrectArray.push(candidateAnswers[i]);
-  } else {
-    answeredIncorrectArray.push(candidateAnswers[i]);
+    numCount += 1;
   }
-}
-grade = answeredCorrectArray.length/correctAnswers.length*100
+  grade = numCount/correctAnswers.length*100
+  
+
+// grade = answeredCorrectArray.length/correctAnswers.length*100
 
 if (grade >= 80) {
   console.log(`You have passed the quiz with ${grade}%, Congrats!!!`)
